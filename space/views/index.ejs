@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Welcome to Shared Space</h1>
+    <div class="quote">"You start here"</div>
+    <h1>Register here!</h1>
+    <form action="/register" method="post" >
+                    Name:<input type="text" name="name">
+                    Phone Number: <input type="text" name="phone_no">
+                    Age: <input type="text" name="age">
+                    Location: <input type="text" name="location">
+                    Description:<input type="text" name="description" >
+                    <br>
+                    User Name:<input type="text" name="username">
+                    Password: <input type="password"  name="password"  id="myInput">
+                    <div class="noclear"><input type="checkbox" onclick="myFunction()">Show Password<br></div>
+                <br>
+       
+            <button type="submit">Sign Up</button>
+           </form>
+  </body>
+  <script type="text/javascript">function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }</script>
+</html>

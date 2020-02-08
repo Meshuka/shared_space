@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Words heal</h1>
+    <button><a href="/add">Share your go-to book</a></button>
+    <div class="newsfeed">
+      <% books.forEach(function(book){ %>
+        <div class="bookss">
+          <input type="hidden" name="_id" value="<%=book._id%>">
+         <a href="/each/<%= book._id %>"><img  src="<%=book.Image%>" >
+         </a>
+           <h3><a href="#"><%=book.name%></a></h3>
+               <p><%=book.description%></p>
+           </div>
+    </div>
+    <% }) %>
+</html>
